@@ -1,24 +1,20 @@
 version: 0.2
-env:
-variables:
-BUCKET: 'spam-classifier-mlops-yt2'
+
 phases:
-install:
-runtime-versions:
-python: 3.11
-commands:
-- pip install boto3 scikit-learn pandas joblib
-pre_build:
-commands:
-- echo 'Starting training pipeline...'
-- echo 'Build started at' $(date)
-build:
-commands:
-- python train/train.py
-post_build:
-commands:
-- echo 'Training complete!'
-- echo 'Model saved to S3 at models/naive_bayes_v1.pkl'
-artifacts:
-files:
-- '**/*'
+  install:
+    runtime-versions:
+      python: 3.11
+    commands:
+      - pip install boto3 scikit-learn pandas joblib
+
+  pre_build:
+    commands:
+      - echo "Starting training pipeline..."
+
+  build:
+    commands:
+      - python train/train.py
+
+  post_build:
+    commands:
+      - echo "Training complete!"
