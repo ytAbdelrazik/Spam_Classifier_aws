@@ -132,4 +132,4 @@ aws configure
 $0 — built entirely within AWS Free Tier limits.
 ## Architecture
 
-![MLOps Architecture](mlops_architecture.svg)
+![MLOps Architecture](mlops_architecture_fixed.svg)
