@@ -130,3 +130,6 @@ aws configure
 ## Total AWS Cost
 
 $0 — built entirely within AWS Free Tier limits.
+## Architecture
+
+![MLOps Architecture](mlops_architecture.svg)
