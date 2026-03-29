@@ -139,4 +139,4 @@ $0 — built entirely within AWS Free Tier limits.
 ![API Demo](terminal_demo.svg)
 
 ## CI/CD Pipeline
-![CI/CD](test.png)
+![CI/CD](test2.png)
